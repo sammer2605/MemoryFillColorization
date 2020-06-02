@@ -124,7 +124,7 @@ body {
     .flip-card-photo {
         border-radius: 10px;
         width: auto;
-        height: 60%;
+        height: 50%;
     }
     .disclaimer {
         font-size: x-small;
