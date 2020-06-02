@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MemoryFill Platinum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        function cycleBackgrounds() {
+            var index = 0;
+            $imageEls = $('.toggle-image');
+            setInterval(function () {
+                index = index + 1 < $imageEls.length ? index + 1 : 0;
+                $imageEls.eq(index).addClass('show');
+                $imageEls.eq(index - 1).removeClass('show');
+            }, 10000);
+        };
+        $(function () {
+            cycleBackgrounds();
+        });
+    </script>
+
+</head>
+<body>
+<div class="background-image toggle-image first-image show"></div>
+<div class="background-image toggle-image second-image"></div>
+<div class="background-image toggle-image third-image"></div>
+<div class="background-image toggle-image fourth-image"></div>
+<div class="background-image toggle-image fifth-image"></div>
+<div class="background-image toggle-image sixth-image"></div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1 class="color2">Page Coming Soon</h1>
+<br />
+<br />
+<div class="main2">
+    <p id="demo" style="font-size:30px"></p>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<div class="main2">
+    <br />
+    <br />
+    <hr />
+    <p align="center"><b>&copy Copyright 2020 MemoryFill</b></p>
+    <br />
+    <p align="center" class="disclaimer">All images used as models or for demonstration purposes on this site are part of the public domain, as made available by the United States Library of Congress' "Free to Use and Reuse" sets. All images belong to their proper owners. MemoryFill does not allow the usage or colorization of copyrighted photos unless the owner colorizes their own work.</p>
+    <br />
+    <br />
+    <a class="button button1" href="#contact">Contact Us</a>
+    <a class="button button1" href="platinum.html">MemoryFill Platinum</a>
+    <a class="button button1" href="#legal">Legal</a>
+    <a class="button button1" href="#privacy">Privacy Policy</a>
+    <a class="button button1">Our Work</a>
+    <br />
+    <br />
+</div>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 1, 2021 7:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "Refresh your page to see some awesomeness!";
+        }
+    }, 1000);
+</script>
+</body>
+<footer>
+    <div class="navbar">
+        <a href="#home">About</a>
+        <a href="#news">Pricing</a>
+        <div class="logo-image">
+            <img src="MemoryFillLogoText.png" alt="MemoryFill" class="img-fluid">
+        </div>
+        <a href="#contact" class="right">Login</a>
+        <a href="#signup" class="right">Sign Up</a>
+    </div>
+    <div class="navbar2">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="#home">About</a>
+            <a href="#news">Pricing</a><a href="#contact" class="right">Login</a>
+            <a href="#signup" class="right">Sign Up</a>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    border: 25px;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 50%;
+    z-index: 600;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+#demo {
+    font-family: "Avenir Next Condensed", sans-serif;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Dosis', sans-serif;
+}
+.navbar a:hover {
+    background: #4CAF50;
+    color: white;
+}
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.main {
+    padding: 16px;
+    margin: 30px 10px;
+    text-align: center;
+    border-style: none;
+    border-color:#9eb8b0;
+    background-color: white;
+    opacity: 0.7;
+    z-index: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-family: 'Helvetica', sans-serif;
+}
+.main2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-style: none;
+    border-color:#9eb8b0;
+    background-color: white;
+    opacity: 0.7;
+    z-index: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-family: 'Oswald', serif;
+}
+.navbar2 {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.navbar2 a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10px;
+}
+.navbar2 a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar2 a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.navbar2 .icon {
+    display: none;
+}
+.navbar2 > div {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+    .img-fluid {
+        display: none; }
+    .flip-card-back {
+        background-color: #4CAF50;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 10px;
+        font-size: small;
+    }
+    .flip-card-photo {
+        border-radius: 10px;
+        width: auto;
+        height: 60%;
+    }
+    .disclaimer {
+        font-size: x-small;
+        font-family: 'Roboto', serif;
+        color: grey;
+    }
+}
+@media screen and (min-width: 600px) {
+    .right { float: right !important;
+    }
+    .flip-card-photo {
+        border-radius: 10px;
+        width: auto;
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .disclaimer {
+        font-size: x-small;
+        font-family: 'Roboto', serif;
+        color: grey;
+        max-width: 500px;
+        text-align: center;
+        margin: auto;
+        width: 500px;
+    }
+    .navbar2 {
+        display: none;
+    }
+}
+.frame{
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    border: 25px;
+    position: relative;
+    margin-top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 600;
+    background-color: white;
+    border-radius: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logowithtext{
+    max-height: 75%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.img-fluid {
+    max-height: 75%;
+    max-width: 75%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.img-fluid:hover {
+    background-color: #2d2d2d !important;
+}
+.logo-image{
+    width: 300px;
+    height: 9px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+.background-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.toggle-image {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 800px;
+    transition: opacity 1s ease-in-out;
+}
+.first-image {
+    background-image: url('https://images.unsplash.com/photo-1579625224624-cd716a46ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');
+    z-index: -3;
+    opacity: 0;
+}
+.second-image { background-image: url('StairsColor.png');
+    z-index: -2;
+    opacity: 0;
+}
+.third-image {
+    background-image: url('https://cdn4.picryl.com/photo/1946/01/01/portrait-of-louis-armstrong-aquarium-new-york-ny-ca-july-1946-1600.jpg');
+    z-index: -1;
+    opacity: 0;
+}
+.fourth-image {
+    background-image: url('Carousel01.png');
+    z-index: -1;
+    opacity: 0;
+}
+.fifth-image {
+    background-image: url('https://tile.loc.gov/storage-services/service/pnp/ppmsca/01900/01946v.jpg');
+    z-index: -1;
+    opacity: 0;
+}
+.sixth-image {
+    background-image: url('Carousel02.png');
+    z-index: -1;
+    opacity: 0;
+}
+.first-image.show {
+    opacity: 1; }
+.second-image.show {
+    opacity: 1; }
+.third-image.show {
+    opacity: 1;
+}
+.fourth-image.show {
+    opacity: 1;
+}
+.fifth-image.show {
+    opacity: 1;
+}
+.sixth-image.show {
+    opacity: 1;
+}
+h1 {
+    font-family: "Avenir Next Condensed", sans-serif; color: white;
+    z-index: 600;
+}
+.color {
+    font-size: 100px;
+    -webkit-background-clip: text;
+    background: transparent;
+    text-shadow: 4px 4px rgb(50, 168, 82);
+    z-index: 600;
+    text-align: center;
+
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    height: auto;
+}
+.flex-container > div {
+    background-color: transparent;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.flip-card {
+    margin-left: 10px;
+    position: relative;
+    background-color: transparent;
+    width: 33%;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: transparent;
+    border: none;
+}
+
+.flip-card-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
