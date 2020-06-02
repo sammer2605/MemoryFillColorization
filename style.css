@@ -108,7 +108,7 @@ body {
     margin-right: auto;
     width: fit-content;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .navbar {
         display: none;
     }
@@ -132,7 +132,7 @@ body {
         color: grey;
     }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     .right { float: right !important;
     }
     .flip-card-photo {
